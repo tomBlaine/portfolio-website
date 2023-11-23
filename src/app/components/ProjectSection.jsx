@@ -61,8 +61,8 @@ const ProjectSection = () => {
         animate: {y:0, opacity: 1},
     }
   return (
-    <section id="projects" className="scroll-mt-24">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section id="projects" className="scroll-mt-24 lg:ml-20">
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-3 md:mb-6">
             My Projects
         </h2>
         <div className="text-white flex flex-row justify-center items-center gap-2 py-6">

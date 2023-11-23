@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
-    <section id="hero" className="lg:py-10 scroll-mt-24">
+    <section id="hero" className="lg:py-10 scroll-mt-24 lg:ml-20">
         <div className="grid grid-cols-1 sm:grid-cols-12">
 
             <motion.div 
