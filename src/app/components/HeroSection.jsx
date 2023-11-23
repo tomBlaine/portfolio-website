@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
-    <section className="lg:py-16 ">
+    <section id="hero" className="lg:py-10 scroll-mt-24">
         <div className="grid grid-cols-1 sm:grid-cols-12">
 
             <motion.div 
@@ -37,8 +37,8 @@ const HeroSection = () => {
                     sjdjadkljs sjnadjnsan sjandjsnajd jksandjksa jksndjdnsakj
                 </p>
                 <div>
-                    <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white">Hire me</button>
-                    <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500  hover:bg-slate-800 text-white  mt-3">
+                    <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">Hire me</button>
+                    <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500  hover:bg-slate-800 text-white  mt-3">
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                     </button>
                 </div>
