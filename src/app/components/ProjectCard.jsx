@@ -1,6 +1,7 @@
 import React from 'react'
 import { CodeBracketIcon, EyeIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { FaGithub } from 'react-icons/fa';
 const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
   return (
     <div>
@@ -10,10 +11,10 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
 
             <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group group-hover:flex group-hover:bg-opacity-80 transistion-all duration-500">
               <Link href={gitUrl} className="mr-2 h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-                <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white"></CodeBracketIcon>
+                <FaGithub className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white"></FaGithub>
               </Link>
               <Link href={previewUrl} className="h-14 w-32 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
-                <p className="h-10 w-full text-center mt-1.5 text-[#ADB7BE] text-lg absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white">Learn More</p>
+                <p className="h-10 w-full text-center mt-1.5 text-[#ADB7BE] text-lg font-semibold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:text-white">Learn More</p>
               </Link>
             </div>
         </div>
