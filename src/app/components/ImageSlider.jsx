@@ -1,32 +1,67 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline'
+import { motion, AnimatePresence } from 'framer-motion';
 
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [slideDirection, setSlideDirection] = useState(0);
 
   const goToPrevious = () => {
     const isFirstImage = currentIndex === 0;
     const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
+    setSlideDirection(1);
   };
 
   const goToNext = () => {
     const isLastImage = currentIndex === images.length - 1;
     const newIndex = isLastImage ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
+    setSlideDirection(0);
+  };
+
+  const variants = {
+    enter: (direction) => ({
+      x: direction === 0 ? 1000 : -1000,
+      opacity: 0,
+    }),
+    center: {
+      zIndex: 1,
+      x: 0,
+      opacity: 1,
+    },
+    exit: (direction) => ({
+      zIndex: 0,
+      x: direction === 0 ? -1000 : 1000,
+      opacity: 0,
+    }),
   };
 
   return (
-    <div className="relative w-full h-full"> 
-      <div className="absolute inset-0 z-10"> 
-        <Image 
-          src={images[currentIndex]} 
-          alt={`Slide ${currentIndex}`}  
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+    <div className="relative w-full h-full overflow-hidden"> 
+            <AnimatePresence custom={slideDirection}>
+        <motion.div
+          key={currentIndex}
+          custom={slideDirection}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30 },
+            opacity: { duration: 0.2 }
+          }}
+          className="absolute inset-0 z-10"
+        >
+          <Image 
+            src={images[currentIndex]} 
+            alt={`Slide ${currentIndex}`}
+            layout="fill"
+            objectFit="cover"
+          />
+        </motion.div>
+      </AnimatePresence>
       <button 
         onClick={goToPrevious}
         className="absolute left-0 ml-1 top-1/2 transform -translate-y-1/2 z-20 bg-white bg-opacity-50 p-1 rounded-full shadow-xl" 
