@@ -7,7 +7,7 @@ const ProjectCard = ({ project, onLearnMore }) => {
     <div>
         <div 
           className="h-52 md:h-72 rounded-t-xl relative group" 
-          style={{ background: `url(${project.image})`, backgroundSize: "cover"}}>
+          style={{ background: `url(${project.images[0]})`, backgroundSize: "cover"}}>
 
             <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group group-hover:flex group-hover:bg-opacity-80 transistion-all duration-500">
               <Link href={project.gitUrl} className="mr-2 h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link">
