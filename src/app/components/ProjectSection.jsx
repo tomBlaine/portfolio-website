@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react'
 import ProjectCard from './ProjectCard';
 import ProjectTag from './ProjectTag';
 import { motion, useInView} from "framer-motion";
+import ProjectOverlay from './ProjectOverlay';
 
 const projectsData = [
     {
@@ -48,6 +49,19 @@ const ProjectSection = () => {
     const ref = useRef(null);
     const isInView = useInView(ref, {once: true});
 
+    const [selectedProject, setSelectedProject] = useState(null);
+    const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+  
+    const handleLearnMore = (project) => {
+      setSelectedProject(project);
+      setIsOverlayVisible(true);
+    };
+  
+    const handleCloseOverlay = () => {
+      setIsOverlayVisible(false);
+      setSelectedProject(null);
+    };
+
     const handleTagChange = (newTag) => {
         setTag(newTag);
     };
@@ -92,17 +106,17 @@ const ProjectSection = () => {
                     transition={{ duration: 0.3, delay: index*0.4 }}
                 >
                 <ProjectCard
-                   key={project.id}
-                   imgUrl={project.image}
-                   title={project.title}
-                   description={project.description} 
-                   gitUrl={project.gitUrl}
-                   previewUrl={project.previewUrl}
+                   project={project}
+                   onLearnMore={handleLearnMore}
                  />
                 </motion.li>
                  ))}
 
         </ul>
+
+        {isOverlayVisible && 
+            <ProjectOverlay project={selectedProject} onClose={handleCloseOverlay} />
+        }
     </section>
   )
 }
