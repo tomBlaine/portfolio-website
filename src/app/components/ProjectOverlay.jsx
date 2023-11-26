@@ -2,10 +2,23 @@ import React from 'react'
 import Image from 'next/image';
 import ImageSlider from './ImageSlider';
 import { XMarkIcon } from '@heroicons/react/24/solid'; 
+import { motion } from 'framer-motion';
 const ProjectOverlay = ({ project, onClose }) => {
     if (!project) return null;
 
+    const fadeIn = {
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 }
+    };
+
     return (
+        <motion.div
+        initial="hidden"
+        animate="visible"
+        exit="hidden"
+        variants={fadeIn}
+        transition={{ duration: 0.25 }}
+        >
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
             <div className="bg-white p-4 rounded-3xl w-5/6 h-5/6 relative flex overflow-hidden">
                 <div className="w-2/5 h-full relative">
@@ -20,6 +33,7 @@ const ProjectOverlay = ({ project, onClose }) => {
                 </div>
             </div>
         </div>
+        </motion.div>
     );
 }
 
