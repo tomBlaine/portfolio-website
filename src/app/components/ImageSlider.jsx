@@ -6,8 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 const ImageSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [slideDirection, setSlideDirection] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false); //used to fix glitch when user clicks arrows too fast.
 
   const goToPrevious = () => {
+    if (isAnimating) return; // Check if animation is in progress
     const isFirstImage = currentIndex === 0;
     const newIndex = isFirstImage ? images.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
@@ -15,6 +17,7 @@ const ImageSlider = ({ images }) => {
   };
 
   const goToNext = () => {
+    if (isAnimating) return; // Check if animation is in progress
     const isLastImage = currentIndex === images.length - 1;
     const newIndex = isLastImage ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
@@ -52,6 +55,8 @@ const ImageSlider = ({ images }) => {
             x: { type: "spring", stiffness: 300, damping: 30 },
             opacity: { duration: 0.2 }
           }}
+          onAnimationStart={() => setIsAnimating(true)} // Set isAnimating to true when animation starts
+          onAnimationComplete={() => setIsAnimating(false)}
           className="absolute inset-0 z-10"
         >
           <Image 

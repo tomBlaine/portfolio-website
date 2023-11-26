@@ -31,7 +31,7 @@ const ProjectOverlay = ({ project, onClose }) => {
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
             <div
                 ref={contentRef}
-                className="bg-white p-4 rounded-3xl w-5/6 h-5/6 relative flex overflow-hidden"
+                className="bg-white p-4 mt-8 rounded-3xl w-5/6 h-5/6 relative flex overflow-hidden"
                 onClick={(e) => e.stopPropagation()}
             >
                 <div className="w-2/5 h-full relative">
