@@ -9,7 +9,7 @@ const projectsData = [
     {
         id: 1,
         title: "AR for Education",
-        description: "Developed an AR iOS app with Unity, integrating a Laravel API, enabling teachers to create and deploy interactive AR presentations to student devices",
+        description: "Developed an AR iOS app with Unity, integrating a Laravel API, enabling teachers to create and deploy interactive AR presentations to student devices.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -45,7 +45,7 @@ const projectsData = [
     {
         id: 4,
         title: "React Personal Portfolio",
-        description: "An interactive Next.js and React.js portfolio, enriched with TailwindCSS for a sleek design and dynamic animations",
+        description: "An interactive Next.js and React.js portfolio, enriched with TailwindCSS for a sleek design and dynamic animations.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
