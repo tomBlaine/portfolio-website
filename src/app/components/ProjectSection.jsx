@@ -8,32 +8,32 @@ import ProjectOverlay from './ProjectOverlay';
 const projectsData = [
     {
         id: 1,
-        title: "AR Project",
-        description: "jnfajknfd asjknfsjknafn jsknfkjsaf jfanskjfnsajk",
+        title: "AR for Education",
+        description: "Developed an AR iOS app with Unity, integrating a Laravel API, enabling teachers to create and deploy interactive AR presentations to student devices",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
         ],
-        tag: ["Mobile", "All"],
+        tag: ["Mobile", "Web", "All"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
         id: 2,
-        title: "AR Project2",
-        description: "jnfajknfd asjknfsjknafn jsknfkjsaf jfanskjfnsajk",
+        title: "Android Museum App",
+        description: "An Android app to display the university's computer science history artifacts, featuring curator management and user interaction with comments.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
         ],
-        tag: ["All", "Web"],
+        tag: ["All", "Mobile"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
         id: 3,
-        title: "AR Project3",
-        description: "jnfajknfd asjknfsjknafn jsknfkjsaf jfanskjfnsajk",
+        title: "Laravel Blog App",
+        description: "Developed a Laravel-based blog web app with custom back-end, featuring robust authentication, and integrated database seeding, factories, models, and migrations.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -44,8 +44,32 @@ const projectsData = [
     },
     {
         id: 4,
-        title: "AR Project4",
-        description: "jnfajknfd asjknfsjknafn jsknfkjsaf jfanskjfnsajk",
+        title: "React Personal Portfolio",
+        description: "An interactive Next.js and React.js portfolio, enriched with TailwindCSS for a sleek design and dynamic animations",
+        images: [
+            "/images/about-image.png",
+            "/images/hero-image1.png",
+        ],
+        tag: ["All", "Web"],
+        gitUrl: "/",
+        previewUrl: "/",
+    },
+    {
+        id: 5,
+        title: "Big Data and Machine Learning",
+        description: "A comprehensive big data project employing various ML techniques, culminating in a neural network for accurate digit recognition.",
+        images: [
+            "/images/about-image.png",
+            "/images/hero-image1.png",
+        ],
+        tag: ["All"],
+        gitUrl: "/",
+        previewUrl: "/",
+    },
+    {
+        id: 6,
+        title: "UX design for Collaborative Consumer Interface",
+        description: "Designed an AI collaboration tool focusing on consumer needs using UX methods, enhancing organizational efficiency and user experience.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
