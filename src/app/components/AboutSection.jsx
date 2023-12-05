@@ -2,19 +2,39 @@
 import React, { useTransition, useState } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
+import TechBox from './TechBox';
+
+const Tech_Data = [
+    "Java",
+    "Java-Script",
+    "Python",
+    "Kotlin",
+    "C#",
+    "HTML",
+    "CSS",
+    "Tailwind",
+    "MySQL",
+    "FireBase"
+]
 
 const TAB_DATA = [
     {
         title: "Skills",
         id: "skills",
         content: (
-            <ul className="list-disc pl-2">
-                <li>A</li>
-                <li>B</li>
-                <li>C</li>
-                <li>D</li>
-                <li>E</li>
-            </ul>
+            <div>
+                <div className="flex flex-wrap">
+                    {Tech_Data.map((title) => (
+                        <TechBox title={title} key={title} />
+                    ))}
+                </div>
+                <ul className="mt-5 ml-4 list-disc">
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                </ul>
+            </div>
         )
     },
     {
@@ -64,7 +84,7 @@ function AboutSection() {
                     <TabButton selectTab={() => handleTabChange("education")} active={tab==="education"}>Education</TabButton>
                     <TabButton selectTab={() => handleTabChange("experience")} active={tab==="experience"}>Experience</TabButton>
                 </div>
-                <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}
+                <div className="mt-5">{TAB_DATA.find((t) => t.id === tab).content}
                 </div>
             </div>
         </div>
