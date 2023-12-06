@@ -90,6 +90,10 @@ const projectsData = [
         id: 6,
         title: "UX design for Collaborative Consumer Interface",
         description: "Designed an AI collaboration tool focusing on consumer needs using UX methods, enhancing organizational efficiency and user experience.",
+        overview:"As part of a four-designer team, we designed a collaborative tool integrating AI to enhance productivity in group settings. Our project focused on designing an intuitive system for university and business collaborations, culminating in the creation of an advertisement and a demonstration website.",
+        details:"Our UX process was comprehensive, involving user research, persona creation, and journey mapping. We employed iterative design with continuous user feedback, focusing on usability testing and prototyping.",
+        tech: [],
+        outcomes:"The project's success was marked by positive feedback, highlighting our effective use of AI to reduce user anxiety and enhance collaboration efficiency. This experience taught us lessons in user-centric design, team collaboration, and the application of AI in improving user experience in group projects.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
