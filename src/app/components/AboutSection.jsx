@@ -41,7 +41,7 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 ml-3">
                 <li>Swansea University</li>
                 <li>B</li>
             </ul>
@@ -51,7 +51,7 @@ const TAB_DATA = [
         title: "Experience",
         id: "experience",
         content: (
-            <ul className="list-disc pl-2">
+            <ul className="list-disc pl-2 ml-3">
                 <li>A</li>
                 <li>B</li>
                 <li>C</li>
