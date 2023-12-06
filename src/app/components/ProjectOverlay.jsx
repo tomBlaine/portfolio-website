@@ -39,9 +39,11 @@ const ProjectOverlay = ({ project, onClose }) => {
                 <div className="w-1/2 p-4">
                     <h2 className="text-3xl text-white font-bold mb-4">{project.title}</h2>
                     <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Project Overview</h2>
-                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.description}</p>
+                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.overview}</p>
                     <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Technical Details</h2>
+                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.details}</p>
                     <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Outcomes and Learning</h2>
+                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.outcomes}</p>
                     <button onClick={onClose} className="absolute top-2 right-2 text-black">
                         <XMarkIcon className="h-10 w-10 text-[#60666a]"></XMarkIcon>
                     </button>

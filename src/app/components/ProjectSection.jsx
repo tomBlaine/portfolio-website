@@ -10,6 +10,9 @@ const projectsData = [
         id: 1,
         title: "AR for Education",
         description: "Developed an AR iOS app with Unity, integrating a Laravel API, enabling teachers to create and deploy interactive AR presentations to student devices.",
+        overview:"Developed a dual-component AR system for secondary education comprising a Laravel web application and an iOS app, enabling teachers to create and deploy 3D presentations in an AR setting",
+        details:"The IOS app used Unity for AR functionality with Sketchfab API used for import of 3D models. The web app integrated CKEditor for rich text and was deployed to digital ocean app platform for testing.",
+        outcomes:"A functional application was developed but key learnings included the importance of user feedback in shaping educational technology, usability studies revealed the system's potential and areas for improvement. Future work includes integrating ChatGPT API to improve usability when building presentations.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
