@@ -5,8 +5,11 @@ import React, { useState } from 'react'
 import NavLink from './NavLink'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
-import { FaGithub, FaLinkedin} from 'react-icons/fa';
 const navLinks = [
+    {
+        title: "Home",
+        path: "#hero",
+    },
     {
         title: "About",
         path: "#about",
@@ -46,8 +49,6 @@ const NavBar = () => {
                         )
                         )
                     }
-                    <li><a href="https://github.com/tomBlaine"><FaGithub className="h-8 w-8 text-[#ADB7BE] hover:text-white cursor-pointer"></FaGithub></a></li>
-                    <li><a href="https://github.com/tomBlaine"><FaLinkedin className="h-8 w-8 text-[#ADB7BE] hover:text-white cursor-pointer"></FaLinkedin></a></li>
                 </ul>
             </div>
         </div>

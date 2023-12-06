@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const variants = {
   animate: {
@@ -29,12 +30,17 @@ const HeroSection = () => {
                 <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
                     sjdjadkljs sjnadjnsan sjandjsnajd jksandjksa jksndjdnsakj
                 </p>
-                <div>
-                    <button className="px-6 py-3 rounded-full w-full sm:w-fit mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">Hire me</button>
+                <div className="flex flex-row">
                     <a href="/cv.pdf" download>
                       <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500  hover:bg-slate-800 text-white  mt-3">
                           <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                       </button>
+                    </a>
+                    <a href="https://github.com/tomBlaine">
+                      <FaGithub className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
+                    </a>
+                    <a href="https://github.com/tomBlaine">
+                      <FaLinkedin className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
                 </div>
             </motion.div>
