@@ -2,6 +2,7 @@ import React, { useRef } from 'react'
 import ImageSlider from './ImageSlider';
 import { XMarkIcon } from '@heroicons/react/24/solid'; 
 import { motion } from 'framer-motion';
+import TechBox from './TechBox';
 const ProjectOverlay = ({ project, onClose }) => {
     const contentRef = useRef(null);
 
@@ -41,6 +42,11 @@ const ProjectOverlay = ({ project, onClose }) => {
                     <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Project Overview</h2>
                     <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.overview}</p>
                     <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Technical Details</h2>
+                    <div className="flex flex-wrap">
+                        {project.tech.map((title) => (
+                            <TechBox title={title} key={title} />
+                        ))}
+                    </div>
                     <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.details}</p>
                     <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Outcomes and Learning</h2>
                     <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.outcomes}</p>

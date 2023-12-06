@@ -11,7 +11,8 @@ const projectsData = [
         title: "AR for Education",
         description: "Developed an AR iOS app with Unity, integrating a Laravel API, enabling teachers to create and deploy interactive AR presentations to student devices.",
         overview:"Developed a dual-component AR system for secondary education comprising a Laravel web application and an iOS app, enabling teachers to create and deploy 3D presentations in an AR setting",
-        details:"The IOS app used Unity for AR functionality with Sketchfab API used for import of 3D models. The web app integrated CKEditor for rich text and was deployed to digital ocean app platform for testing.",
+        details:"The IOS app used Unity for AR functionality with Sketchfab API intergrated for import of 3D models. The web app integrated CKEditor for rich text and was deployed to digital ocean app platform for testing.",
+        tech: ["Unity", "Laravel", "C#", "PHP", "HTML", "CSS"],
         outcomes:"A functional application was developed but key learnings included the importance of user feedback in shaping educational technology, usability studies revealed the system's potential and areas for improvement. Future work includes integrating ChatGPT API to improve usability when building presentations.",
         images: [
             "/images/about-image.png",
@@ -25,6 +26,10 @@ const projectsData = [
         id: 2,
         title: "Android Museum App",
         description: "An Android app to display the university's computer science history artifacts, featuring curator management and user interaction with comments.",
+        overview:"This Android Studio app showcases the university's Computer Science history collection, enabling users to explore artefacts. It features a multi-tier user system: guests, logged-in users, and curators, enhancing interaction with artefact images, descriptions, and community comments.",
+        details:"Built using Android Studio, Kotlin, and XML, this app adheres to Google's Material Design and accessibility guidelines. It leverages Firebase for data storage, image retrieval, and user authentication, offering a seamless, interactive experience.",
+        tech: ["Android Studio", "Firebase", "Kotlin", "XML"],
+        outcomes:"The project honed skills in Android development and Firebase integration. It demonstrated the value of user-centric design and efficient data management, while fostering an understanding of diverse user roles in app functionality.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -37,6 +42,10 @@ const projectsData = [
         id: 3,
         title: "Laravel Blog App",
         description: "Developed a Laravel-based blog web app with custom back-end, featuring robust authentication, and integrated database seeding, factories, models, and migrations.",
+        overview:"Developed a blog application enabling user registration, blogging, and commenting. Features include image-enabled posts, multi-level user privileges, and post-tagging. Enhanced user engagement through email notifications for post interactions.",
+        details:"Built on Laravel with a custom PHP backend. Incorporated one-to-one, one-to-many, and many-to-many database relationships. Authentication managed through Laravel Breeze. Leveraged Laravel Livewire for dynamic search functionality and a custom service container to fetch data from an external API.",
+        tech: ["Laravel", "PHP", "HTML", "CSS", "JavaScript"],
+        outcomes:"Successfully implemented a multi-faceted blog app, honing skills in Laravel, PHP, HTML, CSS. Gained expertise in implementing user authentication, complex database relationships and API integration.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -48,7 +57,11 @@ const projectsData = [
     {
         id: 4,
         title: "React Personal Portfolio",
-        description: "An interactive Next.js and React.js portfolio, enriched with TailwindCSS for a sleek design and dynamic animations.",
+        description: "An interactive Next.js and React portfolio, enriched with TailwindCSS for a sleek design and dynamic animations.",
+        overview:"A dynamic single-page application showcasing my software portfolio. It presents a modern, sleek design powered by Tailwind CSS. The site features custom animations, emphasizing interactive user experience and responsive web design.",
+        details:"The portfolio leverages Next.js and React. Tailwind CSS is utilized and Framer Motion adds fluid animations. The responsive layout ensures optimal viewing across devices. Deployment is achieved through Vercel platform.",
+        tech: ["Next.js", "React", "JavaScript", "Vercel"],
+        outcomes:"Developing this portfolio enhanced skills in React and Next.js, deepening understanding of modern web development practices. Experience in responsive design and animation was gained through Tailwind and Framer Motion. Deployment experience was acquired via Vercel. Future work includes continually improving app responsiveness",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -61,6 +74,10 @@ const projectsData = [
         id: 5,
         title: "Big Data and Machine Learning",
         description: "A comprehensive big data project employing various ML techniques, culminating in a neural network for accurate digit recognition.",
+        overview:"Developed a multi-faceted Big Data and Machine Learning project, focusing on species prediction and image classification. Utilized advanced methods to analyze Iris flowers and wines, along with CIFAR10 image dataset classification.",
+        details:"Implemented a suite of techniques including K-Means clustering, Gaussian Mixture Modeling, linear regression, PCA, LDA, Support Vector Machines, and Neural Networks. Emphasis on CNNs and SVC for image classification with a notable accuracy achievement.",
+        tech: ["Python", "NumPy", "TensorFlow" , "Matplotlib"],
+        outcomes:"Achieved 76.3% accuracy in CIFAR10 dataset image classification, highlighting potential for hyperparameter tuning improvements. Gained proficiency in diverse ML techniques and libraries, enhancing understanding of data analysis, predictive modeling, and algorithm optimization in complex datasets.",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
