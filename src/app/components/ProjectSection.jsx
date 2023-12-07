@@ -15,8 +15,11 @@ const projectsData = [
         tech: ["Unity", "Laravel", "C#", "PHP", "HTML", "CSS"],
         outcomes:"A functional application was developed but key learnings included the importance of user feedback in shaping educational technology, usability studies revealed the system's potential and areas for improvement. Future work includes integrating ChatGPT API to improve usability when building presentations.",
         images: [
-            "/images/about-image.png",
-            "/images/hero-image1.png",
+            "/images/1/1.png",
+            "/images/1/2.png",
+            "/images/1/3.png",
+            "/images/1/4.png",
+            "/images/1/5.png",
         ],
         tag: ["Mobile", "Web", "All"],
         gitUrl: "/",
