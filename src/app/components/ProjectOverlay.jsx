@@ -20,12 +20,7 @@ const ProjectOverlay = ({ project, onClose }) => {
     };
 
     return (
-        <motion.div
-        initial="hidden"
-        animate="visible"
-        exit="hidden"
-        variants={fadeIn}
-        transition={{ duration: 0.5 }} 
+        <div
         onClick={handleBackgroundClick}
         >
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center">
@@ -56,7 +51,7 @@ const ProjectOverlay = ({ project, onClose }) => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     );
 }
 
