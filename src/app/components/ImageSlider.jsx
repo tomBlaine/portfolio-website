@@ -63,7 +63,7 @@ const ImageSlider = ({ images }) => {
             src={images[currentIndex]} 
             alt={`Slide ${currentIndex}`}
             layout="fill"
-            objectFit="cover"
+            objectFit="contain"
           />
         </motion.div>
       </AnimatePresence>
