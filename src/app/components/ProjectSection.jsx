@@ -15,7 +15,7 @@ const projectsData = [
         tech: ["Unity", "Laravel", "C#", "PHP", "HTML", "CSS"],
         outcomes:"A functional application was developed but key learnings included the importance of user feedback in shaping educational technology, usability studies revealed the system's potential and areas for improvement. Future work includes integrating ChatGPT API to improve usability when building presentations.",
         images: [
-            "/images/1/1.png",
+            "/images/1.png",
             "/images/1/2.png",
             "/images/1/3.png",
             "/images/1/4.png",
@@ -50,7 +50,7 @@ const projectsData = [
         tech: ["Laravel", "PHP", "HTML", "CSS", "JavaScript"],
         outcomes:"Successfully implemented a multi-faceted blog app, honing skills in Laravel, PHP, HTML, CSS. Gained expertise in implementing user authentication, complex database relationships and API integration.",
         images: [
-            "/images/about-image.png",
+            "/images/123.png",
             "/images/hero-image1.png",
         ],
         tag: ["All", "Web"],
