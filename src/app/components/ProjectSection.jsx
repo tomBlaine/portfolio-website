@@ -14,6 +14,7 @@ const projectsData = [
         details:"The IOS app used Unity for AR functionality with Sketchfab API intergrated for import of 3D models. The web app integrated CKEditor for rich text and was deployed to digital ocean app platform for testing.",
         tech: ["Unity", "Laravel", "C#", "PHP", "HTML", "CSS"],
         outcomes:"A functional application was developed but key learnings included the importance of user feedback in shaping educational technology, usability studies revealed the system's potential and areas for improvement. Future work includes integrating ChatGPT API to improve usability when building presentations.",
+        coverImg: "/images/1.png",
         images: [
             "/images/1/1.png",
             "/images/1/2.png",
@@ -33,6 +34,7 @@ const projectsData = [
         details:"Built using Android Studio, Kotlin, and XML, this app adheres to Google's Material Design and accessibility guidelines. It leverages Firebase for data storage, image retrieval, and user authentication, offering a seamless, interactive experience.",
         tech: ["Android Studio", "Firebase", "Kotlin", "XML"],
         outcomes:"The project honed skills in Android development and Firebase integration. It demonstrated the value of user-centric design and efficient data management, while fostering an understanding of diverse user roles in app functionality.",
+        coverImg: "/images/2.png",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -49,6 +51,7 @@ const projectsData = [
         details:"Built on Laravel with a custom PHP backend. Incorporated one-to-one, one-to-many, and many-to-many database relationships. Authentication managed through Laravel Breeze. Leveraged Laravel Livewire for dynamic search functionality and a custom service container to fetch data from an external API.",
         tech: ["Laravel", "PHP", "HTML", "CSS", "JavaScript"],
         outcomes:"Successfully implemented a multi-faceted blog app, honing skills in Laravel, PHP, HTML, CSS. Gained expertise in implementing user authentication, complex database relationships and API integration.",
+        coverImg: "/images/1.png",
         images: [
             "/images/123.png",
             "/images/hero-image1.png",
@@ -65,6 +68,7 @@ const projectsData = [
         details:"The portfolio leverages Next.js and React. Tailwind CSS is utilized and Framer Motion adds fluid animations. The responsive layout ensures optimal viewing across devices. Deployment is achieved through Vercel platform.",
         tech: ["Next.js", "React", "JavaScript", "Vercel"],
         outcomes:"Developing this portfolio enhanced skills in React and Next.js, deepening understanding of modern web development practices. Experience in responsive design and animation was gained through Tailwind and Framer Motion. Deployment experience was acquired via Vercel. Future work includes continually improving app responsiveness",
+        coverImg: "/images/1.png",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -81,6 +85,7 @@ const projectsData = [
         details:"Implemented a suite of techniques including K-Means clustering, Gaussian Mixture Modeling, linear regression, PCA, LDA, Support Vector Machines, and Neural Networks. Emphasis on CNNs and SVC for image classification with a notable accuracy achievement.",
         tech: ["Python", "NumPy", "TensorFlow" , "Matplotlib"],
         outcomes:"Achieved 76.3% accuracy in CIFAR10 dataset image classification, highlighting potential for hyperparameter tuning improvements. Gained proficiency in diverse ML techniques and libraries, enhancing understanding of data analysis, predictive modeling, and algorithm optimization in complex datasets.",
+        coverImg: "/images/1.png",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
@@ -97,6 +102,7 @@ const projectsData = [
         details:"Our UX process was comprehensive, involving user research, persona creation, and journey mapping. We employed iterative design with continuous user feedback, focusing on usability testing and prototyping.",
         tech: [],
         outcomes:"The project's success was marked by positive feedback, highlighting our effective use of AI to reduce user anxiety and enhance collaboration efficiency. This experience taught us lessons in user-centric design, team collaboration, and the application of AI in improving user experience in group projects.",
+        coverImg: "/images/1.png",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
