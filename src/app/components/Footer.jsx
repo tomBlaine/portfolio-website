@@ -10,10 +10,10 @@ const Footer = () => {
         className="w-10 h-8 md:w-12 md:h-10" 
       />
       <div className="flex items-center">
-          <a href="https://github.com/yourusername" className="mr-4">
+          <a href="https://github.com/tomBlaine" className="mr-4" target="_blank" rel="noopener noreferrer">
               <FaGithub className="h-6 w-6 md:h-8 md:w-8 text-[#ADB7BE] hover:text-white cursor-pointer"/>            
           </a>
-          <a href="https://linkedin.com/in/yourusername" className="mr-4">
+          <a href="https://github.com/tomBlaine" className="mr-4" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="h-6 w-6 md:h-8 md:w-8 text-[#ADB7BE] hover:text-white cursor-pointer" />
           </a>
           <p className="text-sm md:text-base text-slate-600">Created by Thomas Blaine 2023</p>

@@ -36,10 +36,10 @@ const HeroSection = () => {
                           <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                       </button>
                     </a>
-                    <a href="https://github.com/tomBlaine">
+                    <a href="https://github.com/tomBlaine" target="_blank" rel="noopener noreferrer">
                       <FaGithub className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
-                    <a href="https://github.com/tomBlaine">
+                    <a href="https://github.com/tomBlaine" target="_blank" rel="noopener noreferrer">
                       <FaLinkedin className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
                 </div>

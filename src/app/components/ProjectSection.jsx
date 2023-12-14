@@ -23,7 +23,7 @@ const projectsData = [
             "/images/1/5.png",
         ],
         tag: ["Mobile", "Web", "All"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/tomBlaine/AR-Web-Application-and-API",
         previewUrl: "/",
     },
     {
@@ -44,7 +44,7 @@ const projectsData = [
             "/images/2/6.png",
         ],
         tag: ["All", "Mobile"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/tomBlaine/Museum-Application-Android",
         previewUrl: "/",
     },
     {
@@ -65,7 +65,7 @@ const projectsData = [
             "/images/3/6.png",
         ],
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/tomBlaine/Blog-Web-App",
         previewUrl: "/",
     },
     {
@@ -82,7 +82,7 @@ const projectsData = [
             "/images/hero-image1.png",
         ],
         tag: ["All", "Web"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/tomBlaine/portfolio-website",
         previewUrl: "/",
     },
     {
@@ -101,7 +101,7 @@ const projectsData = [
             "/images/5/4.png",
         ],
         tag: ["All", "Other"],
-        gitUrl: "/",
+        gitUrl: "https://github.com/tomBlaine/Big-Data-and-Machine-Learning",
         previewUrl: "/",
     },
     {
@@ -122,7 +122,7 @@ const projectsData = [
             "/images/6/6.png",
         ],
         tag: ["All", "Other"],
-        gitUrl: "/",
+        gitUrl: "https://drive.google.com/drive/folders/1wyR-nELYBh_jfmZQq1BXGbhZixqeMvlZ?usp=drive_link",
         previewUrl: "/",
     },
 ]
