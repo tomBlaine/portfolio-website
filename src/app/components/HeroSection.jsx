@@ -39,7 +39,7 @@ const HeroSection = () => {
                     <a href="https://github.com/tomBlaine" target="_blank" rel="noopener noreferrer">
                       <FaGithub className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
-                    <a href="https://github.com/tomBlaine" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/thomas-blaine1" target="_blank" rel="noopener noreferrer">
                       <FaLinkedin className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
                 </div>
