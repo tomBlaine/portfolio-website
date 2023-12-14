@@ -13,7 +13,7 @@ const variants = {
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="lg:py-10 scroll-mt-24 lg:ml-20">
+    <section id="hero" className="lg:py-10 scroll-mt-24 lg:ml-20 md:mt-14">
         <div className="grid grid-cols-1 sm:grid-cols-12">
 
             <motion.div 
@@ -23,12 +23,12 @@ const HeroSection = () => {
               className="col-span-8 place-self-center text-centre sm:text-left justify-self-start"
             >
                 <h1 className="text-white mb-4 text-4xl lg:text-7xl lg:leading-normal sm:text-5xl font-extrabold">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hello, Im{" "}</span>
-                    <br/>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hi, I'm {" "}</span>
+                    
                     Tom
                 </h1>
                 <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                    sjdjadkljs sjnadjnsan sjandjsnajd jksandjksa jksndjdnsakj
+                    I'm a graduate computer scientist who loves learning and thrives <br/> in dynamic environments 🚀.
                 </p>
                 <div className="flex flex-row">
                     <a href="/cv.pdf" download>
