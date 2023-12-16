@@ -78,8 +78,10 @@ const projectsData = [
         outcomes:"Developing this portfolio enhanced skills in React and Next.js, deepening understanding of modern web development practices. Experience in responsive design and animation was gained through Tailwind and Framer Motion. Deployment experience was acquired via Vercel. Future work includes continually improving app responsiveness",
         coverImg: "/images/4.png",
         images: [
-            "/images/about-image.png",
-            "/images/hero-image1.png",
+            "/images/4/1.png",
+            "/images/4/2.png",
+            "/images/4/3.png",
+            "/images/4/4.png",
         ],
         tag: ["All", "Web"],
         gitUrl: "https://github.com/tomBlaine/portfolio-website",
