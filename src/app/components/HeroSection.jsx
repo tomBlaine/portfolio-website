@@ -48,11 +48,11 @@ const HeroSection = () => {
               initial = {{ opacity: 0, scale: 0.5 }}
               animate = {{ opacity: 1, scale: 1 }}
               transition= {{ duration: 0.6 }}
-              className="col-span-4 place-self-center mt-4 lg:mt-0"
+              className="col-span-4 place-self-center mt-4 lg:mt-0 hidden md:block"
             >
                 <div className="relative">
                 <motion.div
-                    className="bg-[url('/images/mac.jpeg')] w-[25rem] h-[25rem] bg-cover bg-cente border-primary-500 border-4 shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    className="bg-[url('/images/mac.jpeg')] w-[15rem] h-[15rem] ml-10 lg:w-[22rem] lg:h-[22rem] lg:ml-10 xl:ml-0 bg-cover bg-cente border-primary-500 border-4 shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                     variants={variants}
                     animate="animate"
                 />

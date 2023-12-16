@@ -3,6 +3,14 @@ import React, { useTransition, useState } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
 import TechBox from './TechBox';
+import { motion } from "framer-motion";
+
+const variants = {
+    animate: {
+      borderRadius: ["60% 40% 30% 70% / 60% 30% 70% 40%", "30% 60% 70% 40% / 50% 60% 30% 60%", "60% 40% 30% 70% / 60% 30% 70% 40%"],
+      transition: { duration: 8, repeat: Infinity, ease: "easeInOut" }
+    }
+  };
 
 const Tech_Data = [
     "Java-Script",
@@ -96,11 +104,18 @@ function AboutSection() {
     return (
     <section id="about" className="text-white scroll-mt-24 lg:ml-4 mt-5">
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-            <Image src="/images/about-image1.png" alt="hero image" width={420} height={420} className="rounded-2xl"></Image>
-            <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+            <Image src="/images/about-image1.png" alt="hero image" width={420} height={420} className="rounded-2xl hidden md:block"></Image>
+            
+            <motion.div
+                    className="bg-[url('/images/mac.jpeg')] w-[20rem] h-[20rem] bg-cover bg-cente border-primary-500 border-4 shadow-md absolute left-1/2 transform -translate-x-1/2 md:hidden"
+                    variants={variants}
+                    animate="animate"
+            />
+            
+            <div className="mt-[370px] md:mt-4 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                 <p className="text-base md:text-lg ">
-                    I have a deep interest in web and mobile development, cybersecurity, and the immersive worlds of VR/AR. I recently graduated from Swansea University with a first-class bachelor's degree in Computer Science.
+                    I have a strong interest in web and mobile development, cybersecurity, and the immersive worlds of VR/AR. I recently graduated from Swansea University with a first-class bachelor's degree in Computer Science.
                 </p>
                 <div className="flex flex-row mt-8">
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab==="skills"}>Skills</TabButton>
