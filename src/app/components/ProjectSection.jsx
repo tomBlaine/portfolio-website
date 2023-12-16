@@ -76,7 +76,7 @@ const projectsData = [
         details:"The portfolio leverages Next.js and React. Tailwind CSS is utilized and Framer Motion adds fluid animations. The responsive layout ensures optimal viewing across devices. Deployment is achieved through Vercel platform.",
         tech: ["Next.js", "React", "JavaScript", "Vercel"],
         outcomes:"Developing this portfolio enhanced skills in React and Next.js, deepening understanding of modern web development practices. Experience in responsive design and animation was gained through Tailwind and Framer Motion. Deployment experience was acquired via Vercel. Future work includes continually improving app responsiveness",
-        coverImg: "/images/1.png",
+        coverImg: "/images/4.png",
         images: [
             "/images/about-image.png",
             "/images/hero-image1.png",
