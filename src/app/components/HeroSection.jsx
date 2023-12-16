@@ -23,7 +23,7 @@ const HeroSection = () => {
               className="col-span-8 place-self-center text-centre sm:text-left justify-self-start"
             >
                 <h1 className="text-white mb-4 text-4xl lg:text-7xl lg:leading-normal sm:text-5xl font-extrabold">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">Hi, I'm {" "}</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-400">Hi, I'm {" "}</span>
                     
                     Tom
                 </h1>
@@ -32,15 +32,15 @@ const HeroSection = () => {
                 </p>
                 <div className="flex flex-row">
                     <a href="/cv.pdf" download>
-                      <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500  hover:bg-slate-800 text-white mt-3">
+                      <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-r from-primary-500 to-secondary-300  hover:bg-slate-800 text-white mt-3">
                           <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                       </button>
                     </a>
                     <a href="https://github.com/tomBlaine" target="_blank" rel="noopener noreferrer">
-                      <FaGithub className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
+                      <FaGithub className="h-12 w-12 text-primary-400 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
                     <a href="https://www.linkedin.com/in/thomas-blaine1" target="_blank" rel="noopener noreferrer">
-                      <FaLinkedin className="h-12 w-12 text-primary-500 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
+                      <FaLinkedin className="h-12 w-12 text-primary-400 hover:text-white cursor-pointer px-1 py-1 ml-4 mt-3"/>
                     </a>
                 </div>
             </motion.div>
@@ -52,7 +52,7 @@ const HeroSection = () => {
             >
                 <div className="relative">
                 <motion.div
-                    className="bg-[url('/images/mac.jpeg')] w-[15rem] h-[15rem] ml-10 lg:w-[22rem] lg:h-[22rem] lg:ml-10 xl:ml-0 bg-cover bg-cente border-primary-500 border-4 shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    className="bg-[url('/images/profile.png')] w-[15rem] h-[15rem] ml-10 lg:w-[22rem] lg:h-[22rem] lg:ml-10 xl:ml-0 bg-cover bg-cente border-primary-500 border-4 shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                     variants={variants}
                     animate="animate"
                 />
