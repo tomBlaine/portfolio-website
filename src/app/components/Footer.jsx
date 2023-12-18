@@ -4,9 +4,11 @@ import { FaGithub, FaLinkedin} from 'react-icons/fa';
 const Footer = () => {
   return (
     <footer className="flex flex-wrap justify-between items-center p-4 border-t-[#33353F] border-l-transparent border-r-transparent">
-      <img 
+      <Image 
         src="/images/logo.png" 
         alt="Footer Image" 
+        width={20}
+        height={20}
         className="w-10 h-8 md:w-12 md:h-10" 
       />
       <div className="flex items-center">
