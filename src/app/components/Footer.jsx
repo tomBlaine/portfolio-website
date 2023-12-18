@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="flex flex-wrap justify-between items-center p-4 border-t-[#33353F] border-l-transparent border-r-transparent">
       <Image 
         src="/images/logo.png" 
-        alt="Footer Image" 
+        alt="Footer Logo" 
         width={20}
         height={20}
         className="w-10 h-8 md:w-12 md:h-10" 
