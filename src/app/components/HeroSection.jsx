@@ -31,7 +31,7 @@ const HeroSection = () => {
                     I'm a graduate computer scientist who loves learning and thrives <br/> in dynamic environments 🚀.
                 </p>
                 <div className="flex flex-row">
-                    <a href="/cv.pdf" download>
+                    <a href="/Thomas Blaine CV 2023.pdf" download>
                       <button className="px-1 py-1 rounded-full w-full sm:w-fit bg-gradient-to-r from-primary-500 to-secondary-300  hover:bg-slate-800 text-white mt-3">
                           <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
                       </button>
