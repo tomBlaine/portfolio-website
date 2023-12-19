@@ -107,7 +107,7 @@ function AboutSection() {
             <Image src="/images/about-image1.png" alt="hero image" width={420} height={420} className="rounded-2xl hidden md:block"></Image>
             
             <motion.div
-                    className="bg-[url('/images/profile.png')] w-[20rem] h-[20rem] bg-cover bg-cente border-primary-500 border-4 shadow-md absolute left-1/2 transform -translate-x-1/2 md:hidden"
+                    className="bg-[url('/images/profile.PNG')] w-[20rem] h-[20rem] bg-cover bg-cente border-primary-500 border-4 shadow-md absolute left-1/2 transform -translate-x-1/2 md:hidden"
                     variants={variants}
                     animate="animate"
             />
