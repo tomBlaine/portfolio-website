@@ -115,7 +115,7 @@ function AboutSection() {
             <div className="mt-[370px] md:mt-4 text-left flex flex-col h-full">
                 <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
                 <p className="text-base md:text-lg ">
-                    I have a strong interest in web and mobile development, cybersecurity, and the immersive worlds of VR/AR. I recently graduated from Swansea University with a first-class bachelor's degree in Computer Science.
+                    I have a strong interest in web and mobile development, cybersecurity, and the immersive worlds of VR/AR. I recently graduated from Swansea University with a first-class bachelor&apos;s degree in Computer Science.
                 </p>
                 <div className="flex flex-row mt-8">
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab==="skills"}>Skills</TabButton>

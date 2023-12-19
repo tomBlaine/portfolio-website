@@ -23,12 +23,12 @@ const HeroSection = () => {
               className="col-span-8 place-self-center text-centre sm:text-left justify-self-start"
             >
                 <h1 className="text-white mb-4 text-4xl lg:text-7xl lg:leading-normal sm:text-5xl font-extrabold">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-400">Hi, I'm {" "}</span>
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-secondary-400">Hi, I&apos;m {" "}</span>
                     
                     Tom
                 </h1>
-                <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-                    I'm a graduate computer scientist who loves learning and thrives <br/> in dynamic environments 🚀.
+                <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl pr-32">
+                    I&apos;m a graduate computer scientist who loves learning and thrives in dynamic environments 🚀.
                 </p>
                 <div className="flex flex-row">
                     <a href="/Thomas Blaine CV 2023.pdf" download>
