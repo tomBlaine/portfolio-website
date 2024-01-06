@@ -2,6 +2,9 @@
 
 A dynamic single-page Next.js application showcasing my software portfolio. It presents a modern, sleek design powered by Tailwind CSS. The site features custom animations, emphasizing interactive user experience and responsive web design.
 
+## Live
+https://thomas-blaine.vercel.app/
+
 ## What I Learned
 1. Deepened React and Next.js Knowledge:
     * Gained hands-on experience in developing a dynamic single-page application using React and Next.js.
