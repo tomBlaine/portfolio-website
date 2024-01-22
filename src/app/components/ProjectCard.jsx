@@ -8,7 +8,7 @@ const ProjectCard = ({ project, onLearnMore }) => {
 
       
         <div 
-          className="h-52 md:h-72 rounded-t-xl relative group" 
+          className="h-52 md:h-72 2xl:w-[600px] 2xl:h-96 rounded-t-xl relative group" 
           style={{ background: `url(${project.coverImg})`, backgroundSize: "cover"}}>
 
             <div className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group group-hover:flex group-hover:bg-opacity-80 transistion-all duration-500">
@@ -20,9 +20,9 @@ const ProjectCard = ({ project, onLearnMore }) => {
               </button>
             </div>
         </div>
-        <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
-            <h5 className="text-xl font-semibold mb-2">{project.title}</h5>
-            <p className="text-[#ADB7BE]">{project.description}</p>
+        <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4 2xl:w-[600px]">
+            <h5 className="text-xl 2xl:text-2xl font-semibold mb-2">{project.title}</h5>
+            <p className="text-[#ADB7BE] 2xl:text-xl">{project.description}</p>
         </div>
     </div>
   )

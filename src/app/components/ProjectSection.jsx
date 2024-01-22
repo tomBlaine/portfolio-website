@@ -160,11 +160,11 @@ const ProjectSection = () => {
         animate: {y:0, opacity: 1},
     }
   return (
-    <section id="projects" className="scroll-mt-24 lg:ml-20">
-        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-2 md:mb-2">
+    <section id="projects" className="scroll-mt-24 lg:ml-20 2xl:ml-[280px] w-full">
+        <h2 className="text-center text-4xl font-bold text-white mt-4 mb-2 md:mb-2 2xl:ml-[400px] 2xl:text-5xl">
             My Projects
         </h2>
-        <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-2">
+        <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-2 2xl:mb-8 2xl:ml-[400px]">
             <ProjectTag 
                 onClick={handleTagChange} 
                 name="All" 
@@ -186,7 +186,7 @@ const ProjectSection = () => {
                 isSelected={tag === "Other"} 
             />
         </div>
-        <ul  ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <ul  ref={ref} className="grid md:grid-cols-3 gap-8 2xl:gap-x-[450px] md:gap-12">
             {filterProjects.map((project) => (
                 <motion.li 
                     key={project.id}
@@ -197,6 +197,7 @@ const ProjectSection = () => {
                 >
                 <ProjectCard
                    project={project}
+                   
                    onLearnMore={handleLearnMore}
                  />
                 </motion.li>

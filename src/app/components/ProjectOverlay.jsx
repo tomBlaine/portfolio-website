@@ -32,21 +32,21 @@ const ProjectOverlay = ({ project, onClose }) => {
                 <div className="w-full h-full sm:w-2/5 sm:h-full relative">
                     <ImageSlider images={project.images} alt={project.title}/>
                 </div>
-                <div className="w-full p-4 overflow-y-auto sm:w-1/2">
-                    <h2 className="text-3xl text-white font-bold mb-4">{project.title}</h2>
-                    <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Project Overview</h2>
-                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.overview}</p>
-                    <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Technical Details</h2>
+                <div className="w-full p-4 overflow-y-auto sm:w-1/2 2xl:my-auto 2xl:ml-10">
+                    <h2 className="text-3xl text-white font-bold mb-4 2xl:text-5xl">{project.title}</h2>
+                    <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2 2xl:text-3xl">Project Overview</h2>
+                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4 2xl:text-2xl">{project.overview}</p>
+                    <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2 2xl:text-3xl">Technical Details</h2>
                     <div className="flex flex-wrap">
                         {project.tech.map((title) => (
                             <TechBox title={title} key={title} />
                         ))}
                     </div>
-                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.details}</p>
-                    <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2">Outcomes and Learning</h2>
-                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4">{project.outcomes}</p>
+                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4 2xl:text-2xl">{project.details}</p>
+                    <h2 className="text-xl text-[#c0cbd3] font-semibold mb-2 2xl:text-3xl">Outcomes and Learning</h2>
+                    <p className="text-base text-[#c0cbd3] md:text-lg mb-4 2xl:text-2xl">{project.outcomes}</p>
                     <button onClick={onClose} className="absolute top-2 right-2 text-black">
-                        <XMarkIcon className="h-10 w-10 text-[#60666a]"></XMarkIcon>
+                        <XMarkIcon className="h-10 w-10 2xl:h-16 2xl:w-16 text-[#60666a]"></XMarkIcon>
                     </button>
                 </div>
             </div>

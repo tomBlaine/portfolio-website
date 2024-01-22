@@ -9,7 +9,7 @@ const variants = {
 }
   return (
     <button onClick={selectTab}>
-        <p className={`mr-3 font-semibold hover:text-white ${buttonClasses}`}>{children}</p>
+        <p className={`mr-3 font-semibold 2xl:text-xl hover:text-white ${buttonClasses}`}>{children}</p>
         <motion.div
           animate = {active? "active" : "default"}
           variants={variants}

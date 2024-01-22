@@ -40,7 +40,7 @@ const TAB_DATA = [
                         <TechBox title={title} key={title} />
                     ))}
                 </div>
-                <ul className="mt-5 ml-4 list-disc">
+                <ul className="mt-5 ml-4 list-disc 2xl:text-xl">
                     <li>Web and Mobile Development</li>
                     <li>Cryptography and IT Security</li>
                     <li>Database Management</li>
@@ -53,7 +53,7 @@ const TAB_DATA = [
         title: "Education",
         id: "education",
         content: (
-            <div>
+            <div className="2xl:text-xl">
                 <p className="font-bold">First Class Honours degree in Computer Science from Swansea University.</p>
                 <p className="mt-2">Key modules include:</p>
                 <ul className="list-disc pl-2 ml-3 mt-2">
@@ -75,7 +75,7 @@ const TAB_DATA = [
         id: "experience",
         content: (
 
-            <div>
+            <div className="2xl:text-xl">
                 <p><b>IBM IX</b>, Work Experience</p>
                 <ul className="list-disc pl-2 ml-3">
                     <li>Gained experience of operational areas such as software development, UI/UX design and administration.</li>
@@ -102,19 +102,22 @@ function AboutSection() {
     }
 
     return (
-    <section id="about" className="text-white scroll-mt-24 lg:ml-4 mt-5">
+    <section id="about" className="text-white scroll-mt-24 lg:ml-4 mt-5 2xl:ml-80">
         <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-            <Image src="/images/about-image1.png" alt="hero image" width={420} height={420} className="rounded-2xl hidden md:block"></Image>
-            
+            <div
+                className="bg-[url('/images/about-image1.png')] w-[420px] h-[420px] 2xl:w-[460px] 2xl:h-[460px] rounded-2xl hidden md:block bg-cover bg-center mt-10"
+            />
+
+
             <motion.div
-                    className="bg-[url('/images/profile.PNG')] w-[20rem] h-[20rem] bg-cover bg-cente border-primary-500 border-4 shadow-md absolute left-1/2 transform -translate-x-1/2 md:hidden"
+                    className="bg-[url('/images/profile.PNG')] w-[15rem] h-[15rem] bg-cover bg-cente border-primary-500 border-4 shadow-md absolute left-1/2 transform -translate-x-1/2 md:hidden"
                     variants={variants}
                     animate="animate"
             />
             
-            <div className="mt-[370px] md:mt-4 text-left flex flex-col h-full">
-                <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-                <p className="text-base md:text-lg ">
+            <div className="mt-[290px] md:mt-4 2xl:mt-16 2xl:ml-56 text-left flex flex-col h-full 2xl:w-[800px]">
+                <h2 className="text-4xl 2xl:text-5xl font-bold text-white mb-4">About Me</h2>
+                <p className="text-base md:text-lg 2xl:text-xl">
                     I have a strong interest in web and mobile development, cybersecurity, and the immersive worlds of VR/AR. I recently graduated from Swansea University with a first-class bachelor&apos;s degree in Computer Science.
                 </p>
                 <div className="flex flex-row mt-8">
