@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Personal Software Portfolio
 
-## Getting Started
+A dynamic single-page Next.js application showcasing my software portfolio. It presents a modern, sleek design powered by Tailwind CSS. The site features custom animations, emphasizing interactive user experience and responsive web design.
 
-First, run the development server:
+## Live
+https://tomblaine.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## What I Learned
+1. Deepened React and Next.js Knowledge:
+    * Gained hands-on experience in developing a dynamic single-page application using React and Next.js.
+    * Strengthened understanding of the React framework and its integration with Next.js for efficient web development.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Applied Modern Web Development Practices:
+    * Learned and implemented modern web development practices, emphasizing a sleek and dynamic design.
+    * Utilized Tailwind CSS for styling, enhancing the project's visual appeal with a modern and responsive design.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Enhanced Responsive Design Skills:
+    * Gained proficiency in creating a responsive layout to ensure optimal user experience across various devices.
+    * Applied responsive design principles to accommodate different screen sizes, improving the accessibility of the portfolio.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Mastered Animation Techniques:
+    * Leveraged Framer Motion to implement custom animations, enhancing the interactivity of the portfolio.
+    * Developed skills in creating fluid and engaging animations, contributing to a more visually appealing user experience.
 
-## Learn More
+5. Deployment using Vercel:
+    * Acquired practical experience in deploying a React and Next.js application using the Vercel platform.
+    * Continued to learn the deployment process and best practices for hosting a dynamic single-page application online.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+6. Continuous Improvement and Future Work:
+    * Recognized the importance of ongoing improvement in app responsiveness and overall user experience.
+    * Embraced the concept of iterative development and identified areas for future enhancements to the portfolio.
